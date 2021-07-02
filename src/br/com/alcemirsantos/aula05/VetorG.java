@@ -76,14 +76,14 @@ public class VetorG<T> {
 		return false;
 	}
 
-//	public T[] getListaOcupada() {
-//		T[] resultado = new T[count];
-//		for (int i=0; i<count;i++){
-//			resultado[i] = dados[i];
-//		}
-//		return resultado;
-//	}
-//	
+	public T[] getListaOcupada() {
+		Object[] resultado = new Object[count];
+		for (int i=0; i<count;i++){
+			resultado[i] = dados[i];
+		}
+		return (T[]) resultado;
+	}
+	
 	public T[] getListaCompleta() {
 		return dados;
 	}

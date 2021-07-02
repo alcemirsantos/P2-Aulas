@@ -1,6 +1,6 @@
 package br.com.alcemirsantos.aula04;
 
-public class Aluno {
+public class Aluno { // Bean, Plain Old Java Object (POJO), Entidade
 	
 	private String nome;
 	private double nota;
