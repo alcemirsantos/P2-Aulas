@@ -18,7 +18,7 @@ public class ExemplosAulaSeis {
 	static ArrayList<Aluno> alunos = new ArrayList<Aluno>();
 
 	public static void main(String[] args) {
-
+		
 		boolean quiserContinuar = true;
 		while (quiserContinuar) {
 			imprimirMenu();
@@ -57,13 +57,13 @@ public class ExemplosAulaSeis {
 	}
 
 	private static void imprimirLista() {
-//		for(int i=0; i<alunos.size(); i++)
-//			System.out.println(i+ ". Nome: "+alunos.get(i).getNome()+" Nota: "+alunos.get(i).getNota());
-//		
 		if (alunos.isEmpty())
 			System.out.println("-> Lista Vazia!");
 		else {
 			int pos = 0;
+//			for(int i=0; i<alunos.size(); i++)
+//				System.out.println(i+ ". Nome: "+alunos.get(i).getNome()+" Nota: "+alunos.get(i).getNota());
+//		
 			for (Aluno a : alunos) {
 				System.out.println(pos + ". Nome: " + a.getNome() + " Nota: " + a.getNota());
 				pos++;

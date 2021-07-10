@@ -21,7 +21,7 @@ public class Aluno { // Bean, Plain Old Java Object (POJO), Entidade
 	}
 
 	public Aluno() {
-		this(0.0);
+		this("Sicrano");
 	}
 
 	public String getNome() {
