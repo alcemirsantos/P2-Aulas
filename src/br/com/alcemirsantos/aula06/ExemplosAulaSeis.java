@@ -15,7 +15,7 @@ public class ExemplosAulaSeis {
 	static Scanner sc = new Scanner(System.in);
 
 	// Base de dados dos alunos.
-	static ArrayList<Aluno> alunos = new ArrayList<Aluno>();
+	public static ArrayList<Aluno> alunos = new ArrayList<Aluno>();
 
 	public static void main(String[] args) {
 		
@@ -136,7 +136,7 @@ public class ExemplosAulaSeis {
 		return opcao;
 	}
 
-	private static void imprimirMenu() {
+	public static void imprimirMenu() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("MENU DO PROGRAMA!\n");
 		sb.append("1) adicionar\n");
