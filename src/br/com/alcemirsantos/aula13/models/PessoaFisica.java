@@ -3,7 +3,7 @@ package br.com.alcemirsantos.aula13.models;
 public class PessoaFisica extends Pessoa {
 
 	public PessoaFisica(String numero) {
-		d  = new CPF(numero);
+		documento  = new CPF(numero);
 	}
 
 	@Override

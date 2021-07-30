@@ -3,7 +3,7 @@ package br.com.alcemirsantos.aula13.models;
 public class PessoaJuridica extends Pessoa {
 
 	public PessoaJuridica(String numero) {
-		d = new CNPJ(numero);
+		documento = new CNPJ(numero);
 	}
 
 	@Override
@@ -17,6 +17,8 @@ public class PessoaJuridica extends Pessoa {
 		// TODO Auto-generated method stub
 		
 	}
+	
+
 
 
 }

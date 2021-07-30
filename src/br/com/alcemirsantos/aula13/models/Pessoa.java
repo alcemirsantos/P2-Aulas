@@ -4,10 +4,10 @@ import br.com.alcemirsantos.aula07.Mamifero;
 
 public abstract class Pessoa implements Mamifero {
 
-	protected Documento d;
+	protected Documento documento;
 
 	public Documento getDocumento() {
-		return d;
+		return documento;
 	}
 	
 	// Template method
@@ -34,6 +34,20 @@ public abstract class Pessoa implements Mamifero {
 	public void mamar() {
 		// TODO Auto-generated method stub
 		
+	}
+	
+	@Override
+	public String toString() {
+		return getDocumento().toString();
+	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if(o ==  null ) return false;
+		if(!(o instanceof Pessoa)) return false;
+		Pessoa pesssoaComparada = (Pessoa) o; // type cast
+		
+		return this.documento.equals(pesssoaComparada.documento);
 	}
 
 }
