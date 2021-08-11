@@ -1,8 +1,9 @@
-package br.com.alcemirsantos.aulas14;
+package br.com.alcemirsantos.aula14;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -37,7 +38,7 @@ public class ExemplosAulaQuatorze {
 //			System.out.println(s);
 //		}
 		Map<Pessoa, List<Telefone>> telefonesDasPessoas = new HashMap<Pessoa, List<Telefone>>();
-		
+
 		List<Telefone> telefones = new ArrayList<Telefone>();
 		telefones.add(new Telefone());
 		telefones.add(new Telefone());
@@ -59,17 +60,25 @@ public class ExemplosAulaQuatorze {
 		
 		
 		Set<Entry<Pessoa, List<Telefone>>> ed = telefonesDasPessoas.entrySet();
-		
+		Iterator<Entry<Pessoa, List<Telefone>>> i = ed.iterator();
+		while(i.hasNext()) {
+			Entry<Pessoa, List<Telefone>> tmp = i.next();
+			Pessoa k = tmp.getKey();
+			List v = tmp.getValue();
+		}
 		
 		for(Entry<Pessoa, List<Telefone>> e: ed ) {
 			Pessoa op = e.getKey();
 			List<Telefone> l = e.getValue();
 		}
 		
+		for(Pessoa pp : telefonesDasPessoas.keySet() ) {
+			List<Telefone> l = telefonesDasPessoas.get(pp);
+		}
 		
+		for(List<Telefone> ll: telefonesDasPessoas.values() ) {
+			Telefone t = ll.get(0);
+		}
 	}
-	
-	
-	
 
 }
